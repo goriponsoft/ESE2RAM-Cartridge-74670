@@ -1,0 +1,1132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>Y:\Project\ESE2RAM-Cartridge-74670_short_rev2\ESE2RAM-Cartridge-74670.kicad_sch</source>
+    <date>2024/03/25 3:08:45</date>
+    <tool>Eeschema 7.0.8</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>ESE2RAM Cartridge (74x670 version)</title>
+        <company>Goripon Hardware</company>
+        <rev>2</rev>
+        <date>2024-03-23</date>
+        <source>ESE2RAM-Cartridge-74670.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="BT1">
+      <value>CR2032</value>
+      <footprint>ProjectLibrary:BatteryHolder_CH2x-2032LF</footprint>
+      <libsource lib="Device" part="Battery_Cell" description="Single-cell battery"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESE2RAM-Cartridge-74670.kicad_sch"/>
+      <property name="ki_description" value="Single-cell battery"/>
+      <property name="ki_keywords" value="battery cell"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>31bfadd5-5a98-4f78-8d32-e2b9e26803b3</tstamps>
+    </comp>
+    <comp ref="C1">
+      <value>0.1u</value>
+      <footprint>Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESE2RAM-Cartridge-74670.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>46e15502-49de-4c38-918d-9a66c4423da7</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>0.1u</value>
+      <footprint>Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESE2RAM-Cartridge-74670.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0f09a093-d41a-4180-a913-ce2ff85474ac</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>0.1u</value>
+      <footprint>Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESE2RAM-Cartridge-74670.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>752bc3b9-279d-4584-96da-8941e6fffbe7</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>0.1u</value>
+      <footprint>Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESE2RAM-Cartridge-74670.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6f87d7e6-c2f4-47b5-9d59-d6fb7b688f27</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>0.1u</value>
+      <footprint>Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESE2RAM-Cartridge-74670.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c3819c62-b2cf-4812-aab8-b43b4ed2259a</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>0.1u</value>
+      <footprint>Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESE2RAM-Cartridge-74670.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>286361c9-4ec6-43e5-a936-ac7bc6e63f45</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>0.1u</value>
+      <footprint>Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESE2RAM-Cartridge-74670.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3b24f1c9-72fb-4654-b8a9-217087a85663</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>0.1u</value>
+      <footprint>Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm</footprint>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESE2RAM-Cartridge-74670.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>864954e7-4027-4095-87dc-d55429394ccd</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>10u</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <libsource lib="Device" part="C_Polarized_Small" description="Polarized capacitor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESE2RAM-Cartridge-74670.kicad_sch"/>
+      <property name="ki_description" value="Polarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aff307e7-97b8-4fbc-8647-e6aa670d134e</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>1N4148</value>
+      <footprint>Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf</datasheet>
+      <fields>
+        <field name="Sim.Device">D</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+      </fields>
+      <libsource lib="Diode" part="1N4148" description="100V 0.15A standard switching diode, DO-35"/>
+      <property name="Sim.Device" value="D"/>
+      <property name="Sim.Pins" value="1=K 2=A"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESE2RAM-Cartridge-74670.kicad_sch"/>
+      <property name="ki_description" value="100V 0.15A standard switching diode, DO-35"/>
+      <property name="ki_keywords" value="diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b82184e5-e00f-48e3-9adb-2a5253e92290</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>1N4148</value>
+      <footprint>Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf</datasheet>
+      <fields>
+        <field name="Sim.Device">D</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+      </fields>
+      <libsource lib="Diode" part="1N4148" description="100V 0.15A standard switching diode, DO-35"/>
+      <property name="Sim.Device" value="D"/>
+      <property name="Sim.Pins" value="1=K 2=A"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESE2RAM-Cartridge-74670.kicad_sch"/>
+      <property name="ki_description" value="100V 0.15A standard switching diode, DO-35"/>
+      <property name="ki_keywords" value="diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1f3e8c22-d46d-495b-8242-139d765b36f7</tstamps>
+    </comp>
+    <comp ref="IC1">
+      <value>SRAM</value>
+      <footprint>ProjectLibrary:DIP32_600mil_FineLongPad</footprint>
+      <datasheet>https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf</datasheet>
+      <fields>
+        <field name="Height">4.064</field>
+        <field name="Manufacturer_Name">Alliance Memory</field>
+        <field name="Manufacturer_Part_Number">AS6C4008-55PIN</field>
+        <field name="Mouser Part Number">913-AS6C4008-55PIN</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Alliance-Memory/AS6C4008-55PIN?qs=FP1Nkeq3mZ%252Ba%252BUKi46PVmw%3D%3D</field>
+      </fields>
+      <libsource lib="ProjectLibrary" part="SRAM" description="SRAM 4M, 2.7-5.5V, 55ns 512K x 8 Asynch SRAM"/>
+      <property name="Height" value="4.064"/>
+      <property name="Manufacturer_Name" value="Alliance Memory"/>
+      <property name="Manufacturer_Part_Number" value="AS6C4008-55PIN"/>
+      <property name="Mouser Part Number" value="913-AS6C4008-55PIN"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Alliance-Memory/AS6C4008-55PIN?qs=FP1Nkeq3mZ%252Ba%252BUKi46PVmw%3D%3D"/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESE2RAM-Cartridge-74670.kicad_sch"/>
+      <property name="ki_description" value="SRAM 4M, 2.7-5.5V, 55ns 512K x 8 Asynch SRAM"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cf3617c1-3b96-4d45-9842-a43e18b3324f</tstamps>
+    </comp>
+    <comp ref="IC2">
+      <value>SRAM</value>
+      <footprint>ProjectLibrary:DIP32_600mil_FineLongPad</footprint>
+      <datasheet>https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf</datasheet>
+      <fields>
+        <field name="Height">4.064</field>
+        <field name="Manufacturer_Name">Alliance Memory</field>
+        <field name="Manufacturer_Part_Number">AS6C4008-55PIN</field>
+        <field name="Mouser Part Number">913-AS6C4008-55PIN</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Alliance-Memory/AS6C4008-55PIN?qs=FP1Nkeq3mZ%252Ba%252BUKi46PVmw%3D%3D</field>
+      </fields>
+      <libsource lib="ProjectLibrary" part="SRAM" description="SRAM 4M, 2.7-5.5V, 55ns 512K x 8 Asynch SRAM"/>
+      <property name="Height" value="4.064"/>
+      <property name="Manufacturer_Name" value="Alliance Memory"/>
+      <property name="Manufacturer_Part_Number" value="AS6C4008-55PIN"/>
+      <property name="Mouser Part Number" value="913-AS6C4008-55PIN"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Alliance-Memory/AS6C4008-55PIN?qs=FP1Nkeq3mZ%252Ba%252BUKi46PVmw%3D%3D"/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESE2RAM-Cartridge-74670.kicad_sch"/>
+      <property name="ki_description" value="SRAM 4M, 2.7-5.5V, 55ns 512K x 8 Asynch SRAM"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>208eabd0-5def-489f-827a-37c395361592</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>BUS_MSX</value>
+      <footprint>ProjectLibrary:BUS_MSX_SHORT_CARD</footprint>
+      <libsource lib="ProjectLibrary" part="BUS_MSX" description="MSX cartridge bus connector"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESE2RAM-Cartridge-74670.kicad_sch"/>
+      <property name="ki_description" value="MSX cartridge bus connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a6a78593-ced9-4455-af0f-2790c58d8975</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESE2RAM-Cartridge-74670.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b72e504c-8c57-46b8-be36-3a11a61924c5</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESE2RAM-Cartridge-74670.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>64b2dcab-ffe6-49dd-adad-fe1fcb158016</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESE2RAM-Cartridge-74670.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>31ec0f30-f46d-4e21-92c0-8cc438290bd2</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESE2RAM-Cartridge-74670.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c02c79b8-42e0-478b-b988-58c7d3dfa92a</tstamps>
+    </comp>
+    <comp ref="RN1">
+      <value>10K</value>
+      <footprint>Resistor_THT:R_Array_SIP9</footprint>
+      <datasheet>http://www.vishay.com/docs/31509/csc.pdf</datasheet>
+      <libsource lib="Device" part="R_Network08" description="8 resistor network, star topology, bussed resistors, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESE2RAM-Cartridge-74670.kicad_sch"/>
+      <property name="ki_description" value="8 resistor network, star topology, bussed resistors, small symbol"/>
+      <property name="ki_keywords" value="R network star-topology"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0cbd8674-bad3-441b-88d6-b91ce702580a</tstamps>
+    </comp>
+    <comp ref="S1">
+      <value>DTS-63N-V</value>
+      <footprint>ProjectLibrary:DTS63NV</footprint>
+      <datasheet>https://www.mouser.in/datasheet/2/910/466_DTSG-6-1571565.pdf</datasheet>
+      <fields>
+        <field name="Height">7</field>
+        <field name="Manufacturer_Name">Diptronics</field>
+        <field name="Manufacturer_Part_Number">DTS-63N-V</field>
+        <field name="Mouser Part Number">113-DTS-63N-V</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Diptronics/DTS-63N-V?qs=gTYE2QTfZfThxtJn%252Bv%252BG2g%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="DTS-63N-V" description="6x6 Through Hole &amp; Ground Terminal Type,TS 6MM V H=7.0 160gf BULK "/>
+      <property name="Height" value="7"/>
+      <property name="Manufacturer_Name" value="Diptronics"/>
+      <property name="Manufacturer_Part_Number" value="DTS-63N-V"/>
+      <property name="Mouser Part Number" value="113-DTS-63N-V"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Diptronics/DTS-63N-V?qs=gTYE2QTfZfThxtJn%252Bv%252BG2g%3D%3D"/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESE2RAM-Cartridge-74670.kicad_sch"/>
+      <property name="ki_description" value="6x6 Through Hole &amp; Ground Terminal Type,TS 6MM V H=7.0 160gf BULK "/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>43a700ae-ce66-4cd2-a8e2-996025fd2fc7</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>74HC670</value>
+      <footprint>ProjectLibrary:DIP16_300mil_FineLongPad</footprint>
+      <libsource lib="74xx" part="74LS670" description="4 x 4 Register Files 3-State Outputs"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESE2RAM-Cartridge-74670.kicad_sch"/>
+      <property name="ki_description" value="4 x 4 Register Files 3-State Outputs"/>
+      <property name="ki_keywords" value="TTL Register 3State"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bbf11a08-f34a-4e84-b161-ed4d8089623d</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>74HC670</value>
+      <footprint>ProjectLibrary:DIP16_300mil_FineLongPad</footprint>
+      <libsource lib="74xx" part="74LS670" description="4 x 4 Register Files 3-State Outputs"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESE2RAM-Cartridge-74670.kicad_sch"/>
+      <property name="ki_description" value="4 x 4 Register Files 3-State Outputs"/>
+      <property name="ki_keywords" value="TTL Register 3State"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c0a3c0d2-b34e-42df-83ea-5ba4f211fc4a</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>74HC138</value>
+      <footprint>ProjectLibrary:DIP16_300mil_FineLongPad</footprint>
+      <libsource lib="74xx" part="74LS138" description="Decoder 3 to 8 active low outputs"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESE2RAM-Cartridge-74670.kicad_sch"/>
+      <property name="ki_description" value="Decoder 3 to 8 active low outputs"/>
+      <property name="ki_keywords" value="TTL DECOD DECOD8"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5fa6562e-b77f-4a66-bc1d-75ea13db3329</tstamps>
+    </comp>
+    <comp ref="U4">
+      <value>74HC00</value>
+      <footprint>ProjectLibrary:DIP14_300mil_FineLongPad</footprint>
+      <libsource lib="74xx" part="74LS00" description="quad 2-input NAND gate"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESE2RAM-Cartridge-74670.kicad_sch"/>
+      <property name="ki_description" value="quad 2-input NAND gate"/>
+      <property name="ki_keywords" value="TTL nand 2-input"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e49cf882-d912-424f-b471-57d86eff9176 813832d2-6392-4a54-9015-f821ff6f7185 46d11f53-f828-40e7-9f2b-b01250c32e8d b1f85c08-0e3c-4acc-829e-edf024890d0d 0de2f0fa-0a50-4900-bc05-00d2f06dd640</tstamps>
+    </comp>
+    <comp ref="U5">
+      <value>74HC32</value>
+      <footprint>ProjectLibrary:DIP14_300mil_FineLongPad</footprint>
+      <datasheet>http://www.ti.com/lit/gpn/sn74HC32</datasheet>
+      <libsource lib="_GoriponsoftLibrary" part="74HC32" description="Quad 2-input OR"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ESE2RAM-Cartridge-74670.kicad_sch"/>
+      <property name="ki_description" value="Quad 2-input OR"/>
+      <property name="ki_keywords" value="HCMOS Or2"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>baf939b1-e40a-4075-9995-2521b48749d3 affd5e95-f594-4c91-996c-bf2c9f1a82e4 559ff425-e56c-4efb-8a1f-463462ee9af7 19917431-f0b3-4810-842d-71a9dc055f90 1320ed87-4901-43ee-b538-18df0789f8f7</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="74xx" part="74LS00">
+      <description>quad 2-input NAND gate</description>
+      <docs>http://www.ti.com/lit/gpn/sn74ls00</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>SO14*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LS00</field>
+        <field name="Datasheet">http://www.ti.com/lit/gpn/sn74ls00</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="" type="input"/>
+        <pin num="3" name="" type="output"/>
+        <pin num="4" name="" type="input"/>
+        <pin num="5" name="" type="input"/>
+        <pin num="6" name="" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="" type="output"/>
+        <pin num="9" name="" type="input"/>
+        <pin num="10" name="" type="input"/>
+        <pin num="11" name="" type="output"/>
+        <pin num="12" name="" type="input"/>
+        <pin num="13" name="" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="74xx" part="74LS138">
+      <description>Decoder 3 to 8 active low outputs</description>
+      <docs>http://www.ti.com/lit/gpn/sn74LS138</docs>
+      <footprints>
+        <fp>DIP?16*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LS138</field>
+        <field name="Datasheet">http://www.ti.com/lit/gpn/sn74LS138</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A0" type="input"/>
+        <pin num="2" name="A1" type="input"/>
+        <pin num="3" name="A2" type="input"/>
+        <pin num="4" name="E1" type="input"/>
+        <pin num="5" name="E2" type="input"/>
+        <pin num="6" name="E3" type="input"/>
+        <pin num="7" name="O7" type="output"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="O6" type="output"/>
+        <pin num="10" name="O5" type="output"/>
+        <pin num="11" name="O4" type="output"/>
+        <pin num="12" name="O3" type="output"/>
+        <pin num="13" name="O2" type="output"/>
+        <pin num="14" name="O1" type="output"/>
+        <pin num="15" name="O0" type="output"/>
+        <pin num="16" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="74xx" part="74LS670">
+      <description>4 x 4 Register Files 3-State Outputs</description>
+      <docs>http://www.ti.com/lit/gpn/sn74LS670</docs>
+      <footprints>
+        <fp>DIP?16*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LS670</field>
+        <field name="Datasheet">http://www.ti.com/lit/gpn/sn74LS670</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D2" type="input"/>
+        <pin num="2" name="D3" type="input"/>
+        <pin num="3" name="D4" type="input"/>
+        <pin num="4" name="Rb" type="input"/>
+        <pin num="5" name="Ra" type="input"/>
+        <pin num="6" name="Q4" type="tri_state"/>
+        <pin num="7" name="Q3" type="tri_state"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="Q2" type="tri_state"/>
+        <pin num="10" name="Q1" type="tri_state"/>
+        <pin num="11" name="~{Er}" type="input"/>
+        <pin num="12" name="~{Ew}" type="input"/>
+        <pin num="13" name="Wb" type="input"/>
+        <pin num="14" name="Wa" type="input"/>
+        <pin num="15" name="D1" type="input"/>
+        <pin num="16" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Battery_Cell">
+      <description>Single-cell battery</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery_Cell</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Polarized_Small">
+      <description>Polarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Network08">
+      <description>8 resistor network, star topology, bussed resistors, small symbol</description>
+      <docs>http://www.vishay.com/docs/31509/csc.pdf</docs>
+      <footprints>
+        <fp>R?Array?SIP*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RN</field>
+        <field name="Value">R_Network08</field>
+        <field name="Footprint">Resistor_THT:R_Array_SIP9</field>
+        <field name="Datasheet">http://www.vishay.com/docs/31509/csc.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="common" type="passive"/>
+        <pin num="2" name="R1" type="passive"/>
+        <pin num="3" name="R2" type="passive"/>
+        <pin num="4" name="R3" type="passive"/>
+        <pin num="5" name="R4" type="passive"/>
+        <pin num="6" name="R5" type="passive"/>
+        <pin num="7" name="R6" type="passive"/>
+        <pin num="8" name="R7" type="passive"/>
+        <pin num="9" name="R8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small">
+      <description>Resistor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode" part="1N4148">
+      <description>100V 0.15A standard switching diode, DO-35</description>
+      <docs>https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf</docs>
+      <footprints>
+        <fp>D*DO?35*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">1N4148</field>
+        <field name="Footprint">Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf</field>
+        <field name="Sim.Device">D</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ProjectLibrary" part="BUS_MSX">
+      <description>MSX cartridge bus connector</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">BUS_MSX</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~{CS1}" type="passive"/>
+        <pin num="2" name="~{CS2}" type="passive"/>
+        <pin num="3" name="~{CS12}" type="passive"/>
+        <pin num="4" name="~{SLTSL}" type="passive"/>
+        <pin num="5" name="(NC)" type="passive"/>
+        <pin num="6" name="~{RFSH}" type="passive"/>
+        <pin num="7" name="~{WAIT}" type="passive"/>
+        <pin num="8" name="~{INT}" type="passive"/>
+        <pin num="9" name="~{M1}" type="passive"/>
+        <pin num="10" name="~{BUSDIR}" type="passive"/>
+        <pin num="11" name="~{IORQ}" type="passive"/>
+        <pin num="12" name="~{MREQ}" type="passive"/>
+        <pin num="13" name="~{WR}" type="passive"/>
+        <pin num="14" name="~{RD}" type="passive"/>
+        <pin num="15" name="~{RESET}" type="passive"/>
+        <pin num="16" name="(NC)" type="passive"/>
+        <pin num="17" name="A9" type="passive"/>
+        <pin num="18" name="A15" type="passive"/>
+        <pin num="19" name="A11" type="passive"/>
+        <pin num="20" name="A10" type="passive"/>
+        <pin num="21" name="A7" type="passive"/>
+        <pin num="22" name="A6" type="passive"/>
+        <pin num="23" name="A12" type="passive"/>
+        <pin num="24" name="A8" type="passive"/>
+        <pin num="25" name="A14" type="passive"/>
+        <pin num="26" name="A13" type="passive"/>
+        <pin num="27" name="A1" type="passive"/>
+        <pin num="28" name="A0" type="passive"/>
+        <pin num="29" name="A3" type="passive"/>
+        <pin num="30" name="A2" type="passive"/>
+        <pin num="31" name="A5" type="passive"/>
+        <pin num="32" name="A4" type="passive"/>
+        <pin num="33" name="D1" type="passive"/>
+        <pin num="34" name="D0" type="passive"/>
+        <pin num="35" name="D3" type="passive"/>
+        <pin num="36" name="D2" type="passive"/>
+        <pin num="37" name="D5" type="passive"/>
+        <pin num="38" name="D4" type="passive"/>
+        <pin num="39" name="D7" type="passive"/>
+        <pin num="40" name="D6" type="passive"/>
+        <pin num="41" name="GND" type="passive"/>
+        <pin num="42" name="CLOCK" type="passive"/>
+        <pin num="43" name="GND" type="passive"/>
+        <pin num="44" name="SW1" type="passive"/>
+        <pin num="45" name="+5V" type="passive"/>
+        <pin num="46" name="SW2" type="passive"/>
+        <pin num="47" name="+5V" type="passive"/>
+        <pin num="48" name="+12V" type="passive"/>
+        <pin num="49" name="SOUND" type="passive"/>
+        <pin num="50" name="-12V" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ProjectLibrary" part="SRAM">
+      <description>SRAM 4M, 2.7-5.5V, 55ns 512K x 8 Asynch SRAM</description>
+      <docs>https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">SRAM</field>
+        <field name="Footprint">ProjectLibrary:DIP32_600mil_FineLongPad</field>
+        <field name="Datasheet">https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf</field>
+        <field name="Height">4.064</field>
+        <field name="Manufacturer_Name">Alliance Memory</field>
+        <field name="Manufacturer_Part_Number">AS6C4008-55PIN</field>
+        <field name="Mouser Part Number">913-AS6C4008-55PIN</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Alliance-Memory/AS6C4008-55PIN?qs=FP1Nkeq3mZ%252Ba%252BUKi46PVmw%3D%3D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A18" type="passive"/>
+        <pin num="2" name="A16" type="passive"/>
+        <pin num="3" name="A14" type="passive"/>
+        <pin num="4" name="A12" type="passive"/>
+        <pin num="5" name="A7" type="passive"/>
+        <pin num="6" name="A6" type="passive"/>
+        <pin num="7" name="A5" type="passive"/>
+        <pin num="8" name="A4" type="passive"/>
+        <pin num="9" name="A3" type="passive"/>
+        <pin num="10" name="A2" type="passive"/>
+        <pin num="11" name="A1" type="passive"/>
+        <pin num="12" name="A0" type="passive"/>
+        <pin num="13" name="DQ0" type="passive"/>
+        <pin num="14" name="DQ1" type="passive"/>
+        <pin num="15" name="DQ2" type="passive"/>
+        <pin num="16" name="VSS" type="passive"/>
+        <pin num="17" name="DQ3" type="passive"/>
+        <pin num="18" name="DQ4" type="passive"/>
+        <pin num="19" name="DQ5" type="passive"/>
+        <pin num="20" name="DQ6" type="passive"/>
+        <pin num="21" name="DQ7" type="passive"/>
+        <pin num="22" name="CE#" type="passive"/>
+        <pin num="23" name="A10" type="passive"/>
+        <pin num="24" name="OE#" type="passive"/>
+        <pin num="25" name="A11" type="passive"/>
+        <pin num="26" name="A9" type="passive"/>
+        <pin num="27" name="A8" type="passive"/>
+        <pin num="28" name="A13" type="passive"/>
+        <pin num="29" name="WE#" type="passive"/>
+        <pin num="30" name="A17" type="passive"/>
+        <pin num="31" name="A15" type="passive"/>
+        <pin num="32" name="VCC" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="DTS-63N-V">
+      <description>6x6 Through Hole &amp; Ground Terminal Type,TS 6MM V H=7.0 160gf BULK </description>
+      <docs>https://www.mouser.in/datasheet/2/910/466_DTSG-6-1571565.pdf</docs>
+      <fields>
+        <field name="Reference">S</field>
+        <field name="Value">DTS-63N-V</field>
+        <field name="Footprint">DTS63NV</field>
+        <field name="Datasheet">https://www.mouser.in/datasheet/2/910/466_DTSG-6-1571565.pdf</field>
+        <field name="Height">7</field>
+        <field name="Manufacturer_Name">Diptronics</field>
+        <field name="Manufacturer_Part_Number">DTS-63N-V</field>
+        <field name="Mouser Part Number">113-DTS-63N-V</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Diptronics/DTS-63N-V?qs=gTYE2QTfZfThxtJn%252Bv%252BG2g%3D%3D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="COM_1" type="passive"/>
+        <pin num="2" name="COM_2" type="passive"/>
+        <pin num="3" name="NO_1" type="passive"/>
+        <pin num="4" name="NO_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="_GoriponsoftLibrary" part="74HC32">
+      <description>Quad 2-input OR</description>
+      <docs>http://www.ti.com/lit/gpn/sn74HC32</docs>
+      <footprints>
+        <fp>DIP?14*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74HC32</field>
+        <field name="Datasheet">http://www.ti.com/lit/gpn/sn74HC32</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="" type="input"/>
+        <pin num="3" name="" type="output"/>
+        <pin num="4" name="" type="input"/>
+        <pin num="5" name="" type="input"/>
+        <pin num="6" name="" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="" type="output"/>
+        <pin num="9" name="" type="input"/>
+        <pin num="10" name="" type="input"/>
+        <pin num="11" name="" type="output"/>
+        <pin num="12" name="" type="input"/>
+        <pin num="13" name="" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="74xx">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/74xx.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="Diode">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Diode.kicad_sym</uri>
+    </library>
+    <library logical="ProjectLibrary">
+      <uri>Y:\Project\ESE2RAM-Cartridge-74670_short_rev2/Library.kicad_sym</uri>
+    </library>
+    <library logical="SamacSys_Parts">
+      <uri>Y:/ElectronicComponentLibrary/SamacSys_Parts.kicad_sym</uri>
+    </library>
+    <library logical="_GoriponsoftLibrary">
+      <uri>Y:/SelfMadeLibrary/_GoriponsoftLibrary.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+5V">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="32" pinfunction="VCC" pintype="passive"/>
+      <node ref="IC2" pin="32" pinfunction="VCC" pintype="passive"/>
+      <node ref="J1" pin="45" pinfunction="+5V" pintype="passive"/>
+      <node ref="J1" pin="47" pinfunction="+5V" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="S1" pin="3" pinfunction="NO_1" pintype="passive"/>
+      <node ref="S1" pin="4" pinfunction="NO_2" pintype="passive"/>
+      <node ref="U1" pin="16" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U2" pin="16" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U3" pin="16" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U4" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U5" pin="12" pintype="input"/>
+      <node ref="U5" pin="13" pintype="input"/>
+      <node ref="U5" pin="14" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="2" name="-BATT">
+      <node ref="BT1" pin="2" pinfunction="-" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="IC1" pin="16" pinfunction="VSS" pintype="passive"/>
+      <node ref="IC2" pin="16" pinfunction="VSS" pintype="passive"/>
+    </net>
+    <net code="3" name="/A0">
+      <node ref="IC1" pin="12" pinfunction="A0" pintype="passive"/>
+      <node ref="IC2" pin="12" pinfunction="A0" pintype="passive"/>
+      <node ref="J1" pin="28" pinfunction="A0" pintype="passive"/>
+    </net>
+    <net code="4" name="/A1">
+      <node ref="IC1" pin="11" pinfunction="A1" pintype="passive"/>
+      <node ref="IC2" pin="11" pinfunction="A1" pintype="passive"/>
+      <node ref="J1" pin="27" pinfunction="A1" pintype="passive"/>
+    </net>
+    <net code="5" name="/A2">
+      <node ref="IC1" pin="10" pinfunction="A2" pintype="passive"/>
+      <node ref="IC2" pin="10" pinfunction="A2" pintype="passive"/>
+      <node ref="J1" pin="30" pinfunction="A2" pintype="passive"/>
+    </net>
+    <net code="6" name="/A3">
+      <node ref="IC1" pin="9" pinfunction="A3" pintype="passive"/>
+      <node ref="IC2" pin="9" pinfunction="A3" pintype="passive"/>
+      <node ref="J1" pin="29" pinfunction="A3" pintype="passive"/>
+    </net>
+    <net code="7" name="/A4">
+      <node ref="IC1" pin="8" pinfunction="A4" pintype="passive"/>
+      <node ref="IC2" pin="8" pinfunction="A4" pintype="passive"/>
+      <node ref="J1" pin="32" pinfunction="A4" pintype="passive"/>
+    </net>
+    <net code="8" name="/A5">
+      <node ref="IC1" pin="7" pinfunction="A5" pintype="passive"/>
+      <node ref="IC2" pin="7" pinfunction="A5" pintype="passive"/>
+      <node ref="J1" pin="31" pinfunction="A5" pintype="passive"/>
+    </net>
+    <net code="9" name="/A6">
+      <node ref="IC1" pin="6" pinfunction="A6" pintype="passive"/>
+      <node ref="IC2" pin="6" pinfunction="A6" pintype="passive"/>
+      <node ref="J1" pin="22" pinfunction="A6" pintype="passive"/>
+    </net>
+    <net code="10" name="/A7">
+      <node ref="IC1" pin="5" pinfunction="A7" pintype="passive"/>
+      <node ref="IC2" pin="5" pinfunction="A7" pintype="passive"/>
+      <node ref="J1" pin="21" pinfunction="A7" pintype="passive"/>
+    </net>
+    <net code="11" name="/A8">
+      <node ref="IC1" pin="27" pinfunction="A8" pintype="passive"/>
+      <node ref="IC2" pin="27" pinfunction="A8" pintype="passive"/>
+      <node ref="J1" pin="24" pinfunction="A8" pintype="passive"/>
+    </net>
+    <net code="12" name="/A9">
+      <node ref="IC1" pin="26" pinfunction="A9" pintype="passive"/>
+      <node ref="IC2" pin="26" pinfunction="A9" pintype="passive"/>
+      <node ref="J1" pin="17" pinfunction="A9" pintype="passive"/>
+    </net>
+    <net code="13" name="/A10">
+      <node ref="IC1" pin="23" pinfunction="A10" pintype="passive"/>
+      <node ref="IC2" pin="23" pinfunction="A10" pintype="passive"/>
+      <node ref="J1" pin="20" pinfunction="A10" pintype="passive"/>
+    </net>
+    <net code="14" name="/A11">
+      <node ref="IC1" pin="25" pinfunction="A11" pintype="passive"/>
+      <node ref="IC2" pin="25" pinfunction="A11" pintype="passive"/>
+      <node ref="J1" pin="19" pinfunction="A11" pintype="passive"/>
+      <node ref="U1" pin="14" pinfunction="Wa" pintype="input"/>
+      <node ref="U2" pin="14" pinfunction="Wa" pintype="input"/>
+    </net>
+    <net code="15" name="/A12">
+      <node ref="IC1" pin="4" pinfunction="A12" pintype="passive"/>
+      <node ref="IC2" pin="4" pinfunction="A12" pintype="passive"/>
+      <node ref="J1" pin="23" pinfunction="A12" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="Wb" pintype="input"/>
+      <node ref="U2" pin="13" pinfunction="Wb" pintype="input"/>
+    </net>
+    <net code="16" name="/A13">
+      <node ref="J1" pin="26" pinfunction="A13" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="Ra" pintype="input"/>
+      <node ref="U2" pin="5" pinfunction="Ra" pintype="input"/>
+      <node ref="U3" pin="1" pinfunction="A0" pintype="input"/>
+    </net>
+    <net code="17" name="/A14">
+      <node ref="J1" pin="25" pinfunction="A14" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="18" name="/A15">
+      <node ref="J1" pin="18" pinfunction="A15" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="Rb" pintype="input"/>
+      <node ref="U2" pin="4" pinfunction="Rb" pintype="input"/>
+      <node ref="U3" pin="3" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="19" name="/D0">
+      <node ref="IC1" pin="13" pinfunction="DQ0" pintype="passive"/>
+      <node ref="IC2" pin="13" pinfunction="DQ0" pintype="passive"/>
+      <node ref="J1" pin="34" pinfunction="D0" pintype="passive"/>
+      <node ref="U1" pin="15" pinfunction="D1" pintype="input"/>
+    </net>
+    <net code="20" name="/D1">
+      <node ref="IC1" pin="14" pinfunction="DQ1" pintype="passive"/>
+      <node ref="IC2" pin="14" pinfunction="DQ1" pintype="passive"/>
+      <node ref="J1" pin="33" pinfunction="D1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="D2" pintype="input"/>
+    </net>
+    <net code="21" name="/D2">
+      <node ref="IC1" pin="15" pinfunction="DQ2" pintype="passive"/>
+      <node ref="IC2" pin="15" pinfunction="DQ2" pintype="passive"/>
+      <node ref="J1" pin="36" pinfunction="D2" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="D3" pintype="input"/>
+    </net>
+    <net code="22" name="/D3">
+      <node ref="IC1" pin="17" pinfunction="DQ3" pintype="passive"/>
+      <node ref="IC2" pin="17" pinfunction="DQ3" pintype="passive"/>
+      <node ref="J1" pin="35" pinfunction="D3" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="D4" pintype="input"/>
+    </net>
+    <net code="23" name="/D4">
+      <node ref="IC1" pin="18" pinfunction="DQ4" pintype="passive"/>
+      <node ref="IC2" pin="18" pinfunction="DQ4" pintype="passive"/>
+      <node ref="J1" pin="38" pinfunction="D4" pintype="passive"/>
+      <node ref="U2" pin="15" pinfunction="D1" pintype="input"/>
+    </net>
+    <net code="24" name="/D5">
+      <node ref="IC1" pin="19" pinfunction="DQ5" pintype="passive"/>
+      <node ref="IC2" pin="19" pinfunction="DQ5" pintype="passive"/>
+      <node ref="J1" pin="37" pinfunction="D5" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="D2" pintype="input"/>
+    </net>
+    <net code="25" name="/D6">
+      <node ref="IC1" pin="20" pinfunction="DQ6" pintype="passive"/>
+      <node ref="IC2" pin="20" pinfunction="DQ6" pintype="passive"/>
+      <node ref="J1" pin="40" pinfunction="D6" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="D3" pintype="input"/>
+    </net>
+    <net code="26" name="/D7">
+      <node ref="IC1" pin="21" pinfunction="DQ7" pintype="passive"/>
+      <node ref="IC2" pin="21" pinfunction="DQ7" pintype="passive"/>
+      <node ref="J1" pin="39" pinfunction="D7" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="D4" pintype="input"/>
+    </net>
+    <net code="27" name="/EN_WR">
+      <node ref="RN1" pin="7" pinfunction="R6" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="Q4" pintype="tri_state"/>
+      <node ref="U4" pin="10" pintype="input"/>
+    </net>
+    <net code="28" name="/RAM_A13">
+      <node ref="IC1" pin="28" pinfunction="A13" pintype="passive"/>
+      <node ref="IC2" pin="28" pinfunction="A13" pintype="passive"/>
+      <node ref="RN1" pin="9" pinfunction="R8" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="Q1" pintype="tri_state"/>
+    </net>
+    <net code="29" name="/RAM_A14">
+      <node ref="IC1" pin="3" pinfunction="A14" pintype="passive"/>
+      <node ref="IC2" pin="3" pinfunction="A14" pintype="passive"/>
+      <node ref="RN1" pin="8" pinfunction="R7" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="Q2" pintype="tri_state"/>
+    </net>
+    <net code="30" name="/RAM_A15">
+      <node ref="IC1" pin="31" pinfunction="A15" pintype="passive"/>
+      <node ref="IC2" pin="31" pinfunction="A15" pintype="passive"/>
+      <node ref="RN1" pin="6" pinfunction="R5" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="Q3" pintype="tri_state"/>
+    </net>
+    <net code="31" name="/RAM_A16">
+      <node ref="IC1" pin="2" pinfunction="A16" pintype="passive"/>
+      <node ref="IC2" pin="2" pinfunction="A16" pintype="passive"/>
+      <node ref="RN1" pin="5" pinfunction="R4" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="Q4" pintype="tri_state"/>
+    </net>
+    <net code="32" name="/RAM_A17">
+      <node ref="IC1" pin="30" pinfunction="A17" pintype="passive"/>
+      <node ref="IC2" pin="30" pinfunction="A17" pintype="passive"/>
+      <node ref="RN1" pin="2" pinfunction="R1" pintype="passive"/>
+      <node ref="U2" pin="10" pinfunction="Q1" pintype="tri_state"/>
+    </net>
+    <net code="33" name="/RAM_A18">
+      <node ref="IC1" pin="1" pinfunction="A18" pintype="passive"/>
+      <node ref="IC2" pin="1" pinfunction="A18" pintype="passive"/>
+      <node ref="RN1" pin="4" pinfunction="R3" pintype="passive"/>
+      <node ref="U2" pin="9" pinfunction="Q2" pintype="tri_state"/>
+    </net>
+    <net code="34" name="/RAM_A19">
+      <node ref="RN1" pin="3" pinfunction="R2" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="Q3" pintype="tri_state"/>
+      <node ref="U4" pin="12" pintype="input"/>
+      <node ref="U4" pin="13" pintype="input"/>
+      <node ref="U5" pin="5" pintype="input"/>
+    </net>
+    <net code="35" name="/~{CS12}">
+      <node ref="IC1" pin="24" pinfunction="OE#" pintype="passive"/>
+      <node ref="IC2" pin="24" pinfunction="OE#" pintype="passive"/>
+      <node ref="J1" pin="3" pinfunction="~{CS12}" pintype="passive"/>
+    </net>
+    <net code="36" name="/~{RAM0_CE}">
+      <node ref="IC1" pin="22" pinfunction="CE#" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="U5" pin="6" pintype="output"/>
+    </net>
+    <net code="37" name="/~{RAM1_CE}">
+      <node ref="IC2" pin="22" pinfunction="CE#" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U5" pin="8" pintype="output"/>
+    </net>
+    <net code="38" name="/~{RAM_WE}">
+      <node ref="IC1" pin="29" pinfunction="WE#" pintype="passive"/>
+      <node ref="IC2" pin="29" pinfunction="WE#" pintype="passive"/>
+      <node ref="U5" pin="3" pintype="output"/>
+    </net>
+    <net code="39" name="/~{RD}">
+      <node ref="J1" pin="14" pinfunction="~{RD}" pintype="passive"/>
+    </net>
+    <net code="40" name="/~{RESET}">
+      <node ref="J1" pin="15" pinfunction="~{RESET}" pintype="passive"/>
+      <node ref="U3" pin="6" pinfunction="E3" pintype="input"/>
+      <node ref="U4" pin="5" pintype="input"/>
+    </net>
+    <net code="41" name="/~{SLOTSELECT}">
+      <node ref="S1" pin="2" pinfunction="COM_2" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="E2" pintype="input"/>
+      <node ref="U5" pin="4" pintype="input"/>
+      <node ref="U5" pin="9" pintype="input"/>
+    </net>
+    <net code="42" name="/~{SLTSL}">
+      <node ref="J1" pin="4" pinfunction="~{SLTSL}" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+    </net>
+    <net code="43" name="/~{WR}">
+      <node ref="J1" pin="13" pinfunction="~{WR}" pintype="passive"/>
+      <node ref="U3" pin="4" pinfunction="E1" pintype="input"/>
+      <node ref="U5" pin="1" pintype="input"/>
+    </net>
+    <net code="44" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J1" pin="41" pinfunction="GND" pintype="passive"/>
+      <node ref="J1" pin="43" pinfunction="GND" pintype="passive"/>
+      <node ref="RN1" pin="1" pinfunction="common" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="8" pinfunction="GND" pintype="power_in"/>
+      <node ref="U3" pin="8" pinfunction="GND" pintype="power_in"/>
+      <node ref="U4" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U5" pin="7" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="45" name="Net-(BT1-+)">
+      <node ref="BT1" pin="1" pinfunction="+" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="46" name="Net-(D2-K)">
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+    </net>
+    <net code="47" name="Net-(J1-SW1)">
+      <node ref="J1" pin="44" pinfunction="SW1" pintype="passive"/>
+      <node ref="J1" pin="46" pinfunction="SW2" pintype="passive"/>
+    </net>
+    <net code="48" name="Net-(S1-COM_1)">
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="S1" pin="1" pinfunction="COM_1" pintype="passive"/>
+    </net>
+    <net code="49" name="Net-(U1-~{Er})">
+      <node ref="U1" pin="11" pinfunction="~{Er}" pintype="input"/>
+      <node ref="U2" pin="11" pinfunction="~{Er}" pintype="input"/>
+      <node ref="U4" pin="2" pintype="input"/>
+      <node ref="U4" pin="6" pintype="output"/>
+    </net>
+    <net code="50" name="Net-(U1-~{Ew})">
+      <node ref="U1" pin="12" pinfunction="~{Ew}" pintype="input"/>
+      <node ref="U2" pin="12" pinfunction="~{Ew}" pintype="input"/>
+      <node ref="U3" pin="12" pinfunction="O3" pintype="output"/>
+      <node ref="U4" pin="1" pintype="input"/>
+      <node ref="U4" pin="9" pintype="input"/>
+    </net>
+    <net code="51" name="Net-(U4-Pad3)">
+      <node ref="U4" pin="3" pintype="output"/>
+      <node ref="U4" pin="4" pintype="input"/>
+    </net>
+    <net code="52" name="Net-(U4-Pad8)">
+      <node ref="U4" pin="8" pintype="output"/>
+      <node ref="U5" pin="2" pintype="input"/>
+    </net>
+    <net code="53" name="Net-(U4-Pad11)">
+      <node ref="U4" pin="11" pintype="output"/>
+      <node ref="U5" pin="10" pintype="input"/>
+    </net>
+    <net code="54" name="unconnected-(J1-(NC)-Pad5)">
+      <node ref="J1" pin="5" pinfunction="(NC)" pintype="passive+no_connect"/>
+    </net>
+    <net code="55" name="unconnected-(J1-(NC)-Pad16)">
+      <node ref="J1" pin="16" pinfunction="(NC)" pintype="passive+no_connect"/>
+    </net>
+    <net code="56" name="unconnected-(J1-+12V-Pad48)">
+      <node ref="J1" pin="48" pinfunction="+12V" pintype="passive+no_connect"/>
+    </net>
+    <net code="57" name="unconnected-(J1--12V-Pad50)">
+      <node ref="J1" pin="50" pinfunction="-12V" pintype="passive+no_connect"/>
+    </net>
+    <net code="58" name="unconnected-(J1-CLOCK-Pad42)">
+      <node ref="J1" pin="42" pinfunction="CLOCK" pintype="passive+no_connect"/>
+    </net>
+    <net code="59" name="unconnected-(J1-SOUND-Pad49)">
+      <node ref="J1" pin="49" pinfunction="SOUND" pintype="passive+no_connect"/>
+    </net>
+    <net code="60" name="unconnected-(J1-~{BUSDIR}-Pad10)">
+      <node ref="J1" pin="10" pinfunction="~{BUSDIR}" pintype="passive+no_connect"/>
+    </net>
+    <net code="61" name="unconnected-(J1-~{CS1}-Pad1)">
+      <node ref="J1" pin="1" pinfunction="~{CS1}" pintype="passive+no_connect"/>
+    </net>
+    <net code="62" name="unconnected-(J1-~{CS2}-Pad2)">
+      <node ref="J1" pin="2" pinfunction="~{CS2}" pintype="passive+no_connect"/>
+    </net>
+    <net code="63" name="unconnected-(J1-~{INT}-Pad8)">
+      <node ref="J1" pin="8" pinfunction="~{INT}" pintype="passive+no_connect"/>
+    </net>
+    <net code="64" name="unconnected-(J1-~{IORQ}-Pad11)">
+      <node ref="J1" pin="11" pinfunction="~{IORQ}" pintype="passive+no_connect"/>
+    </net>
+    <net code="65" name="unconnected-(J1-~{M1}-Pad9)">
+      <node ref="J1" pin="9" pinfunction="~{M1}" pintype="passive+no_connect"/>
+    </net>
+    <net code="66" name="unconnected-(J1-~{MREQ}-Pad12)">
+      <node ref="J1" pin="12" pinfunction="~{MREQ}" pintype="passive+no_connect"/>
+    </net>
+    <net code="67" name="unconnected-(J1-~{RFSH}-Pad6)">
+      <node ref="J1" pin="6" pinfunction="~{RFSH}" pintype="passive+no_connect"/>
+    </net>
+    <net code="68" name="unconnected-(J1-~{WAIT}-Pad7)">
+      <node ref="J1" pin="7" pinfunction="~{WAIT}" pintype="passive+no_connect"/>
+    </net>
+    <net code="69" name="unconnected-(U3-O0-Pad15)">
+      <node ref="U3" pin="15" pinfunction="O0" pintype="output+no_connect"/>
+    </net>
+    <net code="70" name="unconnected-(U3-O1-Pad14)">
+      <node ref="U3" pin="14" pinfunction="O1" pintype="output+no_connect"/>
+    </net>
+    <net code="71" name="unconnected-(U3-O2-Pad13)">
+      <node ref="U3" pin="13" pinfunction="O2" pintype="output+no_connect"/>
+    </net>
+    <net code="72" name="unconnected-(U3-O4-Pad11)">
+      <node ref="U3" pin="11" pinfunction="O4" pintype="output+no_connect"/>
+    </net>
+    <net code="73" name="unconnected-(U3-O5-Pad10)">
+      <node ref="U3" pin="10" pinfunction="O5" pintype="output+no_connect"/>
+    </net>
+    <net code="74" name="unconnected-(U3-O6-Pad9)">
+      <node ref="U3" pin="9" pinfunction="O6" pintype="output+no_connect"/>
+    </net>
+    <net code="75" name="unconnected-(U3-O7-Pad7)">
+      <node ref="U3" pin="7" pinfunction="O7" pintype="output+no_connect"/>
+    </net>
+    <net code="76" name="unconnected-(U5-Pad11)">
+      <node ref="U5" pin="11" pintype="output+no_connect"/>
+    </net>
+  </nets>
+</export>

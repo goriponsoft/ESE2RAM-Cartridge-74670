@@ -1,0 +1,57 @@
+# ESE2-RAM(ESE-ESE-RAM)
+
+[日本語版 README はこちら](https://github.com/goriponsoft/ESE2RAM-Cartridge-74670/blob/main/README.md)
+
+This is an MSX cartridge (named: ESE-ESE-RAM or ESE2-RAM) that has ESE-RAM constructed using a general-purpose logic IC.
+Created by Goripon Hardware (hardware division of doujin circle Goripon Software).
+
+Released under Creative Commons License (CC-BY-NC).
+
+X(old Twitter): @goriponsoft
+
+## What is ESE-RAMDisk (ESE-RAM)?
+
+This is a general-purpose backup RAM cartridge for MSX that can be used as storage, etc., devised by Mr. Tsujikawa of [Doujin Circle/ESE Artists' Factory](http://www.hat.hi-ho.ne.jp/tujikawa/ese/).
+
+Usually, it is produced by modifying the game's mega ROM cartridge and replacing the ROM with RAM. You can use the MGINST command to install a DOS kernel and use it as an SSD-like storage (ESE-RAMDisk), or load a mega ROM image and run it.
+
+Since it was originally devised to be used as storage, the cartridge itself is also more commonly referred to as "ESE-RAMDisk."
+
+Please note that it is illegal to load and use images of games that you do not own. In addition to ESE-RAMDisk, it is usually used to run images of the original game cartridge that becomes unusable when modified to ESE-RAM (must be exported to a file before modification), freeware, self-made ROM games, etc. used for.
+
+For more information about ESE-RAMDisk, see [ESE Artists' Factory's ESE-RAMDisk page](http://www.hat.hi-ho.ne.jp/tujikawa/ese/eseram.html)(*Note: This is a Japanese page).
+
+## What is ESE2-RAM(ESE-ESE-RAM)?
+
+In recent years, it has become difficult to obtain MSX games, and there was a lot of hesitation in replacing the precious Mega ROM cartridges with ESE-RAM. Therefore, we used commonly available general-purpose logic ICs (though some are a bit difficult to obtain), built a circuit equivalent to a mega ROM controller, and assembled it as ESE-RAM to create this cartridge.
+
+I named this cartridge "ESE-ESE-RAM" or "ESE2-RAM." "ESE2-RAM" originates from "ESE squared".
+
+## Components
+|Part Number|Parts|Quantity|
+|:--|:--|--:|
+|BT1|CR2032 battery holder, Either "CH29-2032LF"/"CH28-2032LF(TR)"/"CH004-2032LF"/"CH004-2032LF"|1|
+|C1-C8|Unpolarized capacitor 100nF/50V|8|
+|C9|Polarized capacitor 10uF/16V|1|
+|D1-D2|Diode "1N4148"|2|
+|IC1-IC2|SRAM(628512 type/512Kx8) DIP-32 "AS6C4008" etc.|2|
+|R1-R4|Resistor 1/4W, 10K ohm|4|
+|RN1|resistor array 8 elements, 10K ohm|1|
+|S1|6x6mm Through hole & ground terminal type tactile switch "DTS-63N-V"|1|
+|U1-U2|General purpose logic IC "74HC670"|2|
+|U3|General purpose logic IC "74HC138"|1|
+|U4|General purpose logic IC "74HC00"|1|
+|U5|General purpose logic IC "74HC32"|1|
+|-|CR2032 battery|1|
+
+## Preparation(When using as ESE-RAMDisk)
+1. Obtain MGINST.COM and KSAVER.COM (you can download them from [ESE Artists' Factory unofficial home page](http://www.big.or.jp/~saibara/msx/ese/index.html)).
+2. Copy the above tools and the MSX-DOS system file (MSXDOS.SYS/COMMAND.COM) to some kind of MSX-bootable storage (usually a floppy disk). When using the MSX-DOS2 kernel, if you also copy the MSX-DOS2 system file (MSXDOS2.SYS/COMMAND2.COM), it will be automatically copied when ESE-RAM is installed and it will start up with MSX-DOS2. You will be able to do this.
+3. Start MSX-DOS (or MSX-DOS2) from the storage created in step 2.
+4. Save the MSX-DOS or MSX-DOS2 kernel to a file from the MSX console using KSAVER.COM (see the KSAVER documentation for details).
+5. Install the ESE-RAM kernel using MGINST.COM and specifying the kernel file you saved in step 4 (see the MGINST documentation for details).
+6. Make sure to reset and boot from ESE-RAMDisk.
+
+The kernel file saved in step 4 is not needed, so you can delete it. Leaving it in will allow you to skip the step when reinstalling ESE-RAMDisk.
+
+If an error occurs in step 5, there is a high possibility that the parts are poorly soldered, so please check the board.
