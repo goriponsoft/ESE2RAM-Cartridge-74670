@@ -55,7 +55,7 @@ Due to the mounting area of the board, components such as resistors, capacitors,
 ## Preparation(When using as ESE-RAMDisk)
 1. Obtain MGINST.COM and KSAVER.COM (you can download them from [ESE Artists' Factory unofficial home page](http://www.big.or.jp/~saibara/msx/ese/index.html)).
 2. Copy the above tools and the MSX-DOS system file (MSXDOS.SYS/COMMAND.COM) to some kind of MSX-bootable storage (usually a floppy disk). When using the MSX-DOS2 kernel, if you also copy the MSX-DOS2 system file (MSXDOS2.SYS/COMMAND2.COM), it will be automatically copied when ESE-RAM is installed and it will start up with MSX-DOS2. You will be able to do this.
-3. Start MSX-DOS (or MSX-DOS2) from the storage created in step 2.
+3. Insert the ESE2-RAM cartridge into the MSX console and start MSX-DOS (or MSX-DOS2) from the storage created in step 2.
 4. Save the MSX-DOS or MSX-DOS2 kernel to a file from the MSX console using KSAVER.COM (see the KSAVER documentation for details).
 5. Install the ESE-RAM kernel using MGINST.COM and specifying the kernel file you saved in step 4 (see the MGINST documentation for details).
 6. Make sure to reset and boot from ESE-RAMDisk.

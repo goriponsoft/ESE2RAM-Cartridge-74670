@@ -54,7 +54,7 @@ X(旧Twitter): @goriponsoft
 ## 準備(似非RAMDiskとして使う場合)
 1. 似非インストーラー(MGINST.COM)とカーネルセーバー(KSAVER.COM)を入手します([似非職人工房・非公認出張所(似非なページ)](http://www.big.or.jp/~saibara/msx/ese/index-j.html)よりダウンロードすることができます)。
 2. 何らかのMSXで起動可能なストレージ(通常はフロッピーディスク)に上記ツールを展開したものと、MSX-DOSのシステムファイル(MSXDOS.SYS/COMMAND.COM)をコピーします。MSX-DOS2カーネル利用の場合は、加えてMSX-DOS2のシステムファイル(MSXDOS2.SYS/COMMAND2.COM)をコピーしておくと、似非RAMインストール時に自動的にコピーされ、MSX-DOS2で起動することができるようになります。
-3. 手順2で作成したストレージからMSX-DOS(またはMSX-DOS2)を起動します。
+3. MSX実機に似非²RAMカートリッジを挿し、手順2で作成したストレージからMSX-DOS(またはMSX-DOS2)を起動します。
 4. KSAVER.COMを使用し、MSX本体からMSX-DOSまたはMSX-DOS2のカーネルをファイルに保存します(詳細はKSAVERの付属ドキュメントを参照)。
 5. MGINST.COMを使用し、手順4で保存したカーネルのファイルを指定して似非RAMカーネルをインストールします(詳細はMGINSTの付属ドキュメントを参照)。
 6. リセットし似非RAMDiskから起動することを確認します。
