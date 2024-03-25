@@ -3852,7 +3852,7 @@
     (property "Reference" "S1" (at 44.45 15.24 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "DTS-63N-V" (at 44.45 17.78 0)
+    (property "Value" "TVDP01-095BB1" (at 44.45 17.78 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "ProjectLibrary:DTS63NV" (at 55.88 117.78 0)

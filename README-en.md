@@ -31,13 +31,13 @@ I named this cartridge "ESE-ESE-RAM" or "ESE2-RAM." "ESE2-RAM" originates from "
 |Part Number|Parts|Quantity|
 |:--|:--|--:|
 |BT1|CR2032 battery holder, Either "CH29-2032LF"/"CH28-2032LF(TR)"/"CH004-2032LF"/"CH004-2032LF"|1|
-|C1-C8|Unpolarized capacitor 100nF/50V|8|
-|C9|Polarized capacitor 10uF/16V|1|
+|C1-C8|Unpolarized capacitor, 100nF, 50V|8|
+|C9|Polarized capacitor, 10uF, 16V|1|
 |D1-D2|Diode "1N4148"|2|
-|IC1-IC2|SRAM(628512 type/512Kx8) DIP-32 "AS6C4008" etc.|2|
+|IC1-IC2|4Mbit SRAM(628512 type/512Kx8), DIP-32, "AS6C4008" etc.|2|
 |R1-R4|Resistor 1/4W, 10K ohm|4|
-|RN1|resistor array 8 elements, 10K ohm|1|
-|S1|6x6mm Through hole & ground terminal type tactile switch "DTS-63N-V"|1|
+|RN1|resistor array 8 elements, 10K ohm, SIP-9|1|
+|S1|6x6mm Through hole & ground terminal type tactile switch "TVDP01-095BB1"|1|
 |U1-U2|General purpose logic IC "74HC670"|2|
 |U3|General purpose logic IC "74HC138"|1|
 |U4|General purpose logic IC "74HC00"|1|
@@ -45,7 +45,7 @@ I named this cartridge "ESE-ESE-RAM" or "ESE2-RAM." "ESE2-RAM" originates from "
 |-|CR2032 battery|1|
 
 ## How to assemble
-Due to the mounting area of the board, components such as resistors and capacitors are placed on the back side (solder side), so care must be taken when assembling.
+Due to the mounting area of the board, components such as resistors, capacitors, and diodes are placed on the back side (solder side), so care must be taken when assembling.
 
 1. Turn the board over (the side with "Front" written next to the connector is the front side) and place the components in the order of diodes, resistors, ceramic capacitors, electrolytic capacitors, and register array, referring to the silk printing. Please solder from the front side (component side). If you apply too much solder, there will be a gap between the IC and the board, so use a moderate amount of solder when soldering.
 2. After soldering, cut off the excess leads on the surface. If there are any excess leads left, there will be a gap between the IC and the board, so please cut them as short as possible.
