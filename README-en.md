@@ -44,6 +44,14 @@ I named this cartridge "ESE-ESE-RAM" or "ESE2-RAM." "ESE2-RAM" originates from "
 |U5|General purpose logic IC "74HC32"|1|
 |-|CR2032 battery|1|
 
+## How to assemble
+Due to the mounting area of the board, components such as resistors and capacitors are placed on the back side (solder side), so care must be taken when assembling.
+
+1. Turn the board over (the side with "Front" written next to the connector is the front side) and place the components in the order of diodes, resistors, ceramic capacitors, electrolytic capacitors, and register array, referring to the silk printing. Please solder from the front side (component side). If you apply too much solder, there will be a gap between the IC and the board, so use a moderate amount of solder when soldering.
+2. After soldering, cut off the excess leads on the surface. If there are any excess leads left, there will be a gap between the IC and the board, so please cut them as short as possible.
+3. Turn the board over, place the IC and CR2032 battery holder, and solder from the back side (solder side) as usual. You can leave the IC and holder leads as they are.
+4. Solder the tact switch. By default, it is placed on the back side, but it can also be placed on the front side, so please place it as you like.
+
 ## Preparation(When using as ESE-RAMDisk)
 1. Obtain MGINST.COM and KSAVER.COM (you can download them from [ESE Artists' Factory unofficial home page](http://www.big.or.jp/~saibara/msx/ese/index.html)).
 2. Copy the above tools and the MSX-DOS system file (MSXDOS.SYS/COMMAND.COM) to some kind of MSX-bootable storage (usually a floppy disk). When using the MSX-DOS2 kernel, if you also copy the MSX-DOS2 system file (MSXDOS2.SYS/COMMAND2.COM), it will be automatically copied when ESE-RAM is installed and it will start up with MSX-DOS2. You will be able to do this.
