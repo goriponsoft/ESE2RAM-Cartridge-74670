@@ -5,7 +5,7 @@
 This is an MSX cartridge (named: ESE-ESE-RAM or ESE2-RAM) that has ESE-RAM constructed using a general-purpose logic IC.
 Created by Goripon Hardware (hardware division of doujin circle Goripon Software).
 
-Released under Creative Commons License (CC-BY-NC).
+Schematic data, PCB data, and Gerber data for KiCAD7 are released under the Creative Commons license (CC-BY-NC).
 
 X(old Twitter): @goriponsoft
 
