@@ -2,7 +2,7 @@
 
 [日本語版 README はこちら](https://github.com/goriponsoft/ESE2RAM-Cartridge-74670/blob/main/README.md)
 
-This is an MSX cartridge (named: ESE-ESE-RAM or ESE2-RAM) that has ESE-RAM constructed using a general-purpose logic IC.
+This is an MSX cartridge (named ESE-ESE-RAM or ESE2-RAM) that uses a general-purpose logic IC to realize the same operation as a mega ROM controller and uses it to construct ESE-RAM.
 Created by Goripon Hardware (hardware division of doujin circle Goripon Software).
 
 Schematic data, PCB data, and Gerber data for KiCAD7 are released under the Creative Commons license (CC-BY-NC).
@@ -19,19 +19,19 @@ Since it was originally devised to be used as storage, the cartridge itself is a
 
 Please note that it is illegal to load and use images of games that you do not own. In addition to ESE-RAMDisk, it is usually used to run images of the original game cartridge that becomes unusable when modified to ESE-RAM (must be exported to a file before modification), freeware, self-made ROM games, etc. used for.
 
-For more information about ESE-RAMDisk, see [ESE Artists' Factory's ESE-RAMDisk page](http://www.hat.hi-ho.ne.jp/tujikawa/ese/eseram.html)(*Note: This is a Japanese page).
+For more information about ESE-RAMDisk, see [ESE Artists' Factory's ESE-RAMDisk page](http://www.hat.hi-ho.ne.jp/tujikawa/ese/eseram.html)(Note: This page is in Japanese.).
 
 ## What is ESE2-RAM(ESE-ESE-RAM)?
 
-In recent years, it has become difficult to obtain MSX games, and there was a lot of hesitation in replacing the precious Mega ROM cartridges with ESE-RAM. Therefore, we used commonly available general-purpose logic ICs (though some are a bit difficult to obtain), built a circuit equivalent to a mega ROM controller, and assembled it as ESE-RAM to create this cartridge.
+In recent years, it has become difficult to obtain MSX games, and there was a lot of hesitation in replacing the precious Mega ROM cartridges with ESE-RAM. Therefore, we created this cartridge by using commonly available general-purpose logic ICs (although some require time and effort to order) to create a circuit equivalent to a mega ROM controller, and using that to assemble ESE-RAM.
 
-I named this cartridge "ESE-ESE-RAM" or "ESE2-RAM." "ESE2-RAM" originates from "ESE squared".
+I named this cartridge "ESE-ESE-RAM" or "ESE2-RAM". "ESE2-RAM" originates from "ESE squared".
 
 ## Components
 |Part Number|Parts|Quantity|
 |:--|:--|--:|
 |BT1|CR2032 battery holder, Either "CH29-2032LF"/"CH28-2032LF(TR)"/"CH004-2032LF"/"CH004-2032LF"|1|
-|C1-C8|Unpolarized capacitor, 100nF, 50V|8|
+|C1-C8|Unpolarized capacitor, 100nF, 50V, 2.5mm pitch|8|
 |C9|Polarized capacitor, 10uF, 16V|1|
 |D1-D2|Diode "1N4148"|2|
 |IC1-IC2|4Mbit SRAM(628512 type/512Kx8), DIP-32, "AS6C4008" etc.|2|
@@ -51,6 +51,7 @@ Due to the mounting area of the board, components such as resistors, capacitors,
 2. After soldering, cut off the excess leads on the surface. If there are any excess leads left, there will be a gap between the IC and the board, so please cut them as short as possible.
 3. Turn the board over, place the IC and CR2032 battery holder, and solder from the back side (solder side) as usual. You can leave the IC and holder leads as they are.
 4. Solder the tact switch. By default, it is placed on the back side, but it can also be placed on the front side, so please place it as you like.
+5. After carefully checking that there are no short circuits or incorrectly installed parts, insert it into the actual MSX machine and check the operation. Even if you are not using it as an ESE-RAMDisk, it is easy to use MGINST to check its operation.
 
 ## Preparation(When using as ESE-RAMDisk)
 1. Obtain MGINST.COM and KSAVER.COM (you can download them from [ESE Artists' Factory unofficial home page](http://www.big.or.jp/~saibara/msx/ese/index.html)).
