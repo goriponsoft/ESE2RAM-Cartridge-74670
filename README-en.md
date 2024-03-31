@@ -6,6 +6,7 @@ This is an MSX cartridge (named ESE-ESE-RAM or ESE2-RAM) that uses a general-pur
 Created by Goripon Hardware (hardware division of doujin circle Goripon Software).
 
 Schematic data, PCB data, and Gerber data for KiCAD7 are released under the Creative Commons license (CC-BY-NC).
+MGINST215.zip is not covered by the CC license and is subject to the original license and terms.
 
 X(old Twitter): @goriponsoft
 
@@ -49,14 +50,14 @@ Due to the mounting area of the board, components such as resistors, capacitors,
 
 1. Turn the board over (the side with "Front" written next to the connector is the front side) and place the components in the order of diodes, resistors, ceramic capacitors, electrolytic capacitors, and register array, referring to the silk printing. Please solder from the front side (component side). If you apply too much solder, there will be a gap between the IC and the board, so use a moderate amount of solder when soldering.
 2. After soldering, cut off the excess leads on the surface. If there are any excess leads left, there will be a gap between the IC and the board, so please cut them as short as possible.
-3. Turn the board over, place the IC and CR2032 battery holder, and solder from the back side (solder side) as usual. You can leave the IC and holder leads as they are.
+3. Turn the board over, place the IC and CR2032 battery holder, and solder from the back side (solder side) as usual. You can leave the IC and battery holder leads as they are.
 4. Solder the tact switch. By default, it is placed on the back side, but it can also be placed on the front side, so please place it as you like.
 5. After carefully checking that there are no short circuits or incorrectly installed parts, insert it into the actual MSX machine and check the operation. Even if you are not using it as an ESE-RAMDisk, it is easy to use MGINST to check its operation.
 
 ## Preparation(When using as ESE-RAMDisk)
-1. Obtain MGINST.COM and KSAVER.COM (you can download them from [ESE Artists' Factory unofficial home page](http://www.big.or.jp/~saibara/msx/ese/index.html)).
+1. Obtain MGINST.COM and KSAVER.COM (You can download the LHA format archive from [ESE Artists' Factory unofficial home page](http://www.big.or.jp/~saibara/msx/ese/index.html), but we also have [MGINST215.zip](https://github.com/goriponsoft/ESE2RAM-Cartridge-74670/blob/main/MGINST215.zip) and [KSAVER105.zip](https://github.com/goriponsoft/ESE2RAM-Cartridge-74670/blob/main/KSAVER105.zip) re-archived in ZIP format.)
 2. Copy the above tools and the MSX-DOS system file (MSXDOS.SYS/COMMAND.COM) to some kind of MSX-bootable storage (usually a floppy disk). When using the MSX-DOS2 kernel, if you also copy the MSX-DOS2 system file (MSXDOS2.SYS/COMMAND2.COM), it will be automatically copied when ESE-RAM is installed and it will start up with MSX-DOS2. You will be able to do this.
-3. Insert the ESE2-RAM cartridge into the MSX console and start MSX-DOS (or MSX-DOS2) from the storage created in step 2.
+3. Insert the ESE2-RAM cartridge into the actual MSX machine, turn on the power while holding down the tact switch, and start MSX-DOS (or MSX-DOS2) from the storage created in step 2.
 4. Save the MSX-DOS or MSX-DOS2 kernel to a file from the MSX console using KSAVER.COM (see the KSAVER documentation for details).
 5. Install the ESE-RAM kernel using MGINST.COM and specifying the kernel file you saved in step 4 (see the MGINST documentation for details).
 6. Make sure to reset and boot from ESE-RAMDisk.
@@ -64,3 +65,9 @@ Due to the mounting area of the board, components such as resistors, capacitors,
 The kernel file saved in step 4 is not needed, so you can delete it. Leaving it in will allow you to skip the step when reinstalling ESE-RAMDisk.
 
 If an error occurs in step 5, there is a high possibility that the parts are poorly soldered, so please check the board.
+
+## How to use (when running Mega ROM software)
+Due to the functions of the parts used, the initial value of the segment (bank number) in this cartridge is different from that of the ASCII mapper, and it is necessary to initialize the segment register (bank number register) by program.
+Most mega ROM software, including ESE-RAMDisk and games, initialize properly so there is no problem, but software that neglects initialization or expects the initial segment value to be a specific value may not work.
+
+If you want to run your own mega ROM software on this cartridge, write 0 to the segment (bank number) registers from 6000h to 67FFh and appropriate values to other segments as early as possible in the ROM INIT entry.
