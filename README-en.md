@@ -6,7 +6,7 @@ This is an MSX cartridge (named ESE-ESE-RAM or ESE2-RAM) that uses a general-pur
 Created by Goripon Hardware (hardware division of doujin circle Goripon Software).
 
 Schematic data, PCB data, and Gerber data for KiCAD7 are released under the Creative Commons license (CC-BY-NC).
-MGINST215.zip is not covered by the CC license and is subject to the original license and terms.
+MGINST215.zip and KSAVER105.zip are not subject to CC license and are subject to their original license and terms.
 
 X(old Twitter): @goriponsoft
 
