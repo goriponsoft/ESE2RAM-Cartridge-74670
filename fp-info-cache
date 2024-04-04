@@ -1,4 +1,4 @@
-22384219286613390
+22389361745221804
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -83979,6 +83979,13 @@ Ferrite Bead
 2
 2
 SamacSys_Parts
+CAPAE660X460N
+case code6.3x4.5
+Capacitor Polarised
+0
+2
+2
+SamacSys_Parts
 CS_TO-92
 TO-92
 Transistor BJT NPN
@@ -84345,6 +84352,13 @@ Integrated Circuit
 SamacSys_Parts
 SOIC127P1412X305-32N
 32L 450MIL SOP REV.F
+Integrated Circuit
+0
+32
+32
+SamacSys_Parts
+SOP50P1400X120-32N
+SST Package Code: WH
 Integrated Circuit
 0
 32
@@ -91698,6 +91712,13 @@ Dual use of CH29-2032LF and CH28-2032LF(TR)
 CR2032 BR2032 BatteryHolder Battery
 0
 5
+2
+_GoriponsoftLibrary
+BatteryHolder_CH28-2032LF(TR)
+Dual use of CH29-2032LF and CH28-2032LF(TR)
+CR2032 BR2032 BatteryHolder Battery
+0
+2
 2
 _GoriponsoftLibrary
 BatteryHolder_CH29-2032LF
