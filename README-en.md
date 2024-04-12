@@ -33,7 +33,7 @@ I named this cartridge "ESE-ESE-RAM" or "ESE2-RAM". "ESE2-RAM" originates from "
 |:--|:--|--:|
 |BT1|CR2032 battery holder, Either "CH29-2032LF"/"CH28-2032LF(TR)"/"CH004-2032LF"/"CH004-2032LF"|1|
 |C1-C8|Unpolarized capacitor, 100nF, 50V, 2.5mm pitch|8|
-|C9|Polarized capacitor, 10uF, 16V|1|
+|C9|Polarized capacitor, 47uF, 16V|1|
 |D1-D2|Diode "1N4148"|2|
 |IC1-IC2|4Mbit SRAM(628512 type/512Kx8), DIP-32, "AS6C4008" etc.|2|
 |R1-R4|Resistor 1/4W, 10K ohm|4|
@@ -70,4 +70,4 @@ If an error occurs in step 5, there is a high possibility that the parts are poo
 Due to the functions of the parts used, the initial value of the segment (bank number) in this cartridge is different from that of the ASCII mapper, and it is necessary to initialize the segment register (bank number register) by program.
 Most mega ROM software, including ESE-RAMDisk and games, initialize properly so there is no problem, but software that neglects initialization or expects the initial segment value to be a specific value may not work.
 
-If you want to run your own mega ROM software on this cartridge, write 0 to the segment (bank number) registers from 6000h to 67FFh and appropriate values to other segments as early as possible in the ROM INIT entry.
+If you want to run your own mega ROM software on this cartridge, please initialize it by writing 0 to segment registers 6000h to 67FFh and appropriate values to other segment registers as early as possible in the ROM INIT entry.
