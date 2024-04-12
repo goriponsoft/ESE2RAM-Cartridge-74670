@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>Y:\Project\ESE2RAM-Cartridge-74670\ESE2RAM-Cartridge-74670.kicad_sch</source>
-    <date>2024/04/05 5:27:37</date>
+    <date>2024/04/12 23:18:09</date>
     <tool>Eeschema 7.0.8</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -124,7 +124,7 @@
       <tstamps>864954e7-4027-4095-87dc-d55429394ccd</tstamps>
     </comp>
     <comp ref="C9">
-      <value>10u</value>
+      <value>47u</value>
       <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
       <libsource lib="Device" part="C_Polarized_Small" description="Polarized capacitor, small symbol"/>
       <property name="Sheetname" value=""/>
@@ -171,7 +171,7 @@
       <tstamps>1f3e8c22-d46d-495b-8242-139d765b36f7</tstamps>
     </comp>
     <comp ref="IC1">
-      <value>SRAM</value>
+      <value>4M SRAM</value>
       <footprint>ProjectLibrary:DIP32_600mil_FineLongPad</footprint>
       <datasheet>https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf</datasheet>
       <fields>
@@ -196,7 +196,7 @@
       <tstamps>cf3617c1-3b96-4d45-9842-a43e18b3324f</tstamps>
     </comp>
     <comp ref="IC2">
-      <value>SRAM</value>
+      <value>4M SRAM</value>
       <footprint>ProjectLibrary:DIP32_600mil_FineLongPad</footprint>
       <datasheet>https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf</datasheet>
       <fields>
