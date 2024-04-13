@@ -6,8 +6,8 @@
 
   (title_block
     (title "ESE2RAM Cartridge (74x670 version)")
-    (date "2024-04-05")
-    (rev "3")
+    (date "2024-04-13")
+    (rev "4")
     (company "Goripon Hardware")
   )
 
@@ -4537,13 +4537,13 @@
     )
   )
 
-  (symbol (lib_id "Device:C_Small") (at 222.25 82.55 0) (unit 1)
+  (symbol (lib_id "Device:C_Small") (at 222.25 82.55 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 864954e7-4027-4095-87dc-d55429394ccd)
-    (property "Reference" "C8" (at 224.79 81.2863 0)
+    (property "Reference" "C8" (at 224.79 83.8137 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.1u" (at 224.79 83.8263 0)
+    (property "Value" "0.1u" (at 224.79 81.2737 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" (at 222.25 82.55 0)
@@ -4647,7 +4647,7 @@
     (property "Value" "47u" (at 233.68 81.8261 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" (at 231.14 82.55 0)
+    (property "Footprint" "ProjectLibrary:CP_Radial_D5.0mm_P2.00mm_Horizontal" (at 231.14 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 231.14 82.55 0)
