@@ -68,6 +68,7 @@ If an error occurs in step 5, there is a high possibility that the parts are poo
 
 ## How to use (when running Mega ROM software)
 Due to the functions of the parts used, the initial value of the segment (bank number) in this cartridge is different from that of the ASCII mapper, and it is necessary to initialize the segment register (bank number register) by program.
-Most mega ROM software, including ESE-RAMDisk and games, initialize properly so there is no problem, but software that neglects initialization or expects the initial segment value to be a specific value may not work.
+Most Mega ROM software, including ESE-RAMDisk and games, initialize properly so there is no problem, but software that neglects initialization or expects the initial segment value to be a specific value may not work.
 
-If you want to run your own mega ROM software on this cartridge, please initialize it by writing 0 to segment registers 6000h to 67FFh and appropriate values to other segment registers as early as possible in the ROM INIT entry.
+If you want to run your own Mega ROM software with this cartridge, place the body of the ROM INIT entry (jump destination address) in the range 4000h to 5FFFh, and write 0 to the segment registers 6000h to 67FFh as early as possible.
+The values ​​of unwritten segment registers will be undefined, so initialize them as necessary.
