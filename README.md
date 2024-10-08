@@ -1,8 +1,8 @@
 # 似非²RAMカートリッジ
 [English README is here](README-en.md)
 
-[前面](front.jpg)
-[背面](rear.jpg)
+![前面](front.jpg)
+![背面](rear.jpg)
 
 これは、汎用ロジックICによりメガROMコントローラと同等の動作を実現し、それを利用して似非RAMを構築したMSX用カートリッジ(命名:似非・似非RAMまたは似非²RAM)です。
 ごりぽんハードウェア(同人サークル・ごりぽんソフトウェアのハードウェア部門)により作成されました。

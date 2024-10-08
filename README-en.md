@@ -2,8 +2,8 @@
 
 [日本語版 README はこちら](README.md)
 
-[Front side](front.jpg)
-[Rear side](rear.jpg)
+![Front side](front.jpg)
+![Rear side](rear.jpg)
 
 This is an MSX cartridge (named ESE-ESE-RAM or ESE2-RAM) that uses a general-purpose logic IC to realize the same operation as a mega ROM controller and uses it to construct ESE-RAM.
 Created by Goripon Hardware (hardware division of doujin circle Goripon Software).
