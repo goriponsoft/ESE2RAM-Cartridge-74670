@@ -1,15 +1,15 @@
-# ESE2-RAM(ESE-ESE-RAM) Cartridge
+# ESE2-RAM Cartridge(1Mbyte Version)
 
 [日本語版 README はこちら](README.md)
 
-![Front side](front.jpg)
-![Rear side](rear.jpg)
+![Front side](assemble_manual/front.jpg)
+![Rear side](assemble_manual/rear.jpg)
 
 This is an MSX cartridge (named ESE-ESE-RAM or ESE2-RAM) that uses a general-purpose logic IC to realize the same operation as a mega ROM controller and uses it to construct ESE-RAM.
 Created by Goripon Hardware (hardware division of doujin circle Goripon Software).
 
 Schematic data, PCB data, and Gerber data for KiCAD7 are released under the Creative Commons license (CC-BY-NC).
-MGINST215.zip and KSAVER105.zip are not subject to CC license and are subject to their original license and terms.
+[MGINST215.zip](https://github.com/goriponsoft/ESE2RAM-Cartridge-74670/blob/main/MGINST215.zip) and [KSAVER105.zip](https://github.com/goriponsoft/ESE2RAM-Cartridge-74670/blob/main/KSAVER105.zip) are not subject to CC license and are subject to their original license and terms.
 
 X(old Twitter): @goriponsoft
 
@@ -27,7 +27,7 @@ For more information about ESE-RAMDisk, see [ESE Artists' Factory's ESE-RAMDisk 
 
 ## What is ESE2-RAM(ESE-ESE-RAM)?
 
-In recent years, it has become difficult to obtain MSX games, and there was a lot of hesitation in replacing the precious Mega ROM cartridges with ESE-RAM. Therefore, we created this cartridge by using commonly available general-purpose logic ICs (although some require time and effort to order) to create a circuit equivalent to a mega ROM controller, and using that to assemble ESE-RAM.
+In recent years, it has become difficult to obtain MSX games, and there was a lot of hesitation in replacing the precious Mega ROM cartridges with ESE-RAM. Therefore, we created this cartridge by using commonly available general-purpose logic ICs to create a circuit equivalent to a mega ROM controller, and using that to assemble ESE-RAM.
 
 I named this cartridge "ESE-ESE-RAM" or "ESE2-RAM". "ESE2-RAM" originates from "ESE squared".
 
