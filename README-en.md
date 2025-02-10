@@ -73,5 +73,26 @@ If an error occurs in step 5, there is a high possibility that the parts are poo
 Due to the functions of the parts used, in this cartridge, the initial value of the segment (bank number) is an undefined value unlike the ASCII mapper, so it is essential to initialize the segment register (bank number register) by program.
 Most Mega ROM software, including ESE-RAMDisk and games, initialize properly so there is no problem, but software that neglects initialization or expects the initial segment value to be a specific value may not work.
 
-If you want to run homebrew mega ROM software with this cartridge, write 0 to the segment register of the bank containing the address you are running as early as possible in the INIT entry.
-The values ​​of unwritten segment registers will be undefined, so initialize them as necessary.
+Immediately after starting or resetting this cartridge, the bank is as follows.
+
+|Bank Address|Register Address|Bank Number|
+|:--|:--|--:|
+|4000h-5FFFh|6000h-67FFh|0|
+|6000h-7FFFh|6800h-6FFFh|0|
+|8000h-9FFFh|7000h-77FFh|0|
+|A000h-BFFFh|7800h-7FFFh|0|
+
+If you write a value to a register from this state, the written register will change to the written value, and the unwritten register will change to an undefined value.
+
+For example, if you write 0 to 6000h, the result will be as follows.
+
+|Bank Address|Register Address|Bank Number|
+|:--|:--|--:|
+|4000h-5FFFh|6000h-67FFh|0|
+|6000h-7FFFh|6800h-6FFFh|undefined|
+|8000h-9FFFh|7000h-77FFh|undefined|
+|A000h-BFFFh|7800h-7FFFh|undefined|
+
+Therefore, when running self-made mega ROM software with this cartridge, it is necessary to initialize it by writing 0 to the register of the bank containing the address being executed as early as possible in the INIT entry.
+If you first write to a register in a bank that does not contain the address being executed, the program being executed will switch to an undefined bank, and in most cases will run out of control.
+Also, the values ​​of registers that are not written to are undefined, so initialize them if necessary.
