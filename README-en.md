@@ -86,13 +86,22 @@ If you write a value to a register from this state, the written register will ch
 
 For example, if you write 0 to 6000h, the result will be as follows.
 
-|Bank Address|Register Address|Bank Number|
-|:--|:--|--:|
-|4000h-5FFFh|6000h-67FFh|0|
-|6000h-7FFFh|6800h-6FFFh|undefined|
-|8000h-9FFFh|7000h-77FFh|undefined|
-|A000h-BFFFh|7800h-7FFFh|undefined|
+|Bank Address|Bank Number|
+|:--|--:|
+|4000h-5FFFh|0|
+|6000h-7FFFh|undefined|
+|8000h-9FFFh|undefined|
+|A000h-BFFFh|undefined|
 
 Therefore, when running self-made mega ROM software with this cartridge, it is necessary to initialize it by writing 0 to the register of the bank containing the address being executed as early as possible in the INIT entry.
 If you first write to a register in a bank that does not contain the address being executed, the program being executed will switch to an undefined bank, and in most cases will run out of control.
 Also, the values ​​of registers that are not written to are undefined, so initialize them if necessary.
+
+Normally, you can initialize the device without any problems by placing the following code in segment #0 and calling it from the INIT entry in the ROM header as code for the 4000h to 5FFFh banks.
+```
+	xor		a
+	ld		(6000h),a
+	ld		(6800h),a
+	ld		(7000h),a
+	ld		(7800h),a
+```
