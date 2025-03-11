@@ -1,9 +1,9 @@
-# ESE2-RAM(ESE-ESE-RAM) Cartridge
+# ESE2-RAM Cartridge(1Mbyte Version)
 
 [日本語版 README はこちら](README.md)
 
-![Front side](front.jpg)
-![Rear side](rear.jpg)
+![Front side](assemble_manual/front.jpg)
+![Rear side](assemble_manual/rear.jpg)
 
 This is an MSX cartridge (named ESE-ESE-RAM or ESE2-RAM) that uses a general-purpose logic IC to realize the same operation as a mega ROM controller and uses it to construct ESE-RAM.
 Created by Goripon Hardware (hardware division of doujin circle Goripon Software).
@@ -27,7 +27,7 @@ For more information about ESE-RAMDisk, see [ESE Artists' Factory's ESE-RAMDisk 
 
 ## What is ESE2-RAM(ESE-ESE-RAM)?
 
-In recent years, it has become difficult to obtain MSX games, and there was a lot of hesitation in replacing the precious Mega ROM cartridges with ESE-RAM. Therefore, we created this cartridge by using commonly available general-purpose logic ICs (although some require time and effort to order) to create a circuit equivalent to a mega ROM controller, and using that to assemble ESE-RAM.
+In recent years, it has become difficult to obtain MSX games, and there was a lot of hesitation in replacing the precious Mega ROM cartridges with ESE-RAM. Therefore, we created this cartridge by using commonly available general-purpose logic ICs to create a circuit equivalent to a mega ROM controller, and using that to assemble ESE-RAM.
 
 I named this cartridge "ESE-ESE-RAM" or "ESE2-RAM". "ESE2-RAM" originates from "ESE squared".
 
@@ -75,3 +75,15 @@ Most Mega ROM software, including ESE-RAMDisk and games, initialize properly so 
 
 If you want to run homebrew mega ROM software with this cartridge, write 0 to the segment register of the bank containing the address you are running as early as possible in the INIT entry.
 The values ​​of unwritten segment registers will be undefined, so initialize them as necessary.
+
+A simple way to do this is to run the following code at the beginning of your INIT entry:
+
+```
+	xor		a
+	ld		(6000h),a
+	ld		(6800h),a
+	ld		(7000h),a
+	ld		(7800h),a
+```
+
+If you omit it or write a different initial value, you must be careful about the initialization order so that the bank where the initialization code is placed is not switched.

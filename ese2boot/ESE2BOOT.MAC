@@ -1,0 +1,282 @@
+;======
+;ESE2RAM BOOTer
+;======
+
+BDOS	equ	0005h
+CALSLT	equ	001Ch
+ENASLT	equ	0024h
+DMA	equ	0080h
+
+page1_adr	equ	4000h
+bank0_select	equ	6000h
+bank1_select	equ	6800h
+bank2_select	equ	7000h
+bank3_select	equ	7800h
+
+RAMAD1	equ	0F342h
+EXPTBL	equ	0FCC1h
+
+;======
+
+	.z80
+	cseg
+
+;====== output version string
+
+mes_version:
+	db	'ESE22RAM BOOTer 1.00',13,10
+	db	'Copyright 2025 GORIPONSOFT',26
+mes_crlf:
+	db	13,10,'$'
+
+START::
+	ld	de,mes_version
+	ld	c,9
+	call	BDOS
+
+;====== command line switch interpretation
+
+	ld	hl,DMA
+	ld	a,(hl)
+	or	a
+	jp	z,disp_help
+	inc	a
+	add	a,l
+	ld	e,a
+	ld	a,0
+	adc	a,h
+	ld	d,a
+	xor	a
+	ld	(de),a
+	ld	(initialize_type),a
+	dec	a
+	ld	(target_slot_number),a
+switch_search_loop:
+	inc	hl
+	ld	a,(hl)
+	or	a
+	jr	z,switch_search_end
+	cp	'/'
+	jr	nz,switch_search_loop
+
+	inc	hl
+	ld	a,(hl)
+	and	0dfh
+	cp	'S'
+	jp	z,sw_target_slot
+	cp	'T'
+	jp	z,sw_initialize_type
+	jp	disp_help
+
+switch_search_end:
+	ld	a,(target_slot_number)
+	inc	a
+	jp	nz,start_initialize
+	ld	de,mes_err_notarget
+	jp	exit_command
+
+sw_initialize_type:
+	inc	hl
+	ld	a,(hl)
+	or	a
+	jp	z,switch_search_end
+	sub	'0'
+	jp	c,disp_help
+	cp	3
+	jp	nc,disp_help
+	ld	(initialize_type),a
+	inc	hl
+	ld	a,(hl)
+	dec	hl
+	or	a
+	jp	z,switch_search_end
+	cp	' '
+	jp	z,switch_search_loop
+	cp	'/'
+	jp	z,switch_search_loop
+	jp	disp_help
+
+sw_target_slot:
+	inc	hl
+	ld	a,(hl)
+	cp	'#'
+	jr	nz,hex_slot_number
+
+	inc	hl
+	ld	a,(hl)
+	sub	'0'
+	jp	c,disp_help
+	cp	4
+	jp	nc,disp_help
+	ld	e,a
+	inc	hl
+	ld	a,(hl)
+	or	a
+	jr	z,confirm_slot_number
+	cp	' '
+	jr	z,confirm_slot_number
+	cp	'/'
+	jr	z,confirm_slot_number
+	cp	'-'
+	jr	nz,not_hyphen
+	inc	hl
+	ld	a,(hl)
+not_hyphen:
+	sub	'0'
+	jp	c,disp_help
+	cp	4
+	jp	nc,disp_help
+	rlca
+	rlca
+	or	80h
+	or	e
+	ld	e,a
+	jr	confirm_slot_number
+
+hex_slot_number:
+	sub	'0'
+	jp	c,disp_help
+	ld	e,a
+	cp	4
+	jr	c,confirm_slot_number
+	cp	8
+	jp	nz,disp_help
+	inc	hl
+	ld	a,(hl)
+	and	0dfh
+	sub	'0'
+	jp	c,disp_help
+	cp	10
+	jr	nc,non_numeric_hex_value
+	or	80h
+	ld	e,a
+	jr	confirm_slot_number
+
+non_numeric_hex_value:
+	sub	'A'-'0'-10
+	jp	c,disp_help
+	cp	16
+	jp	nc,disp_help
+	or	80h
+	ld	e,a
+;	jr	confirm_slot_number
+
+confirm_slot_number:
+	ld	(target_slot_number),de
+	inc	hl
+	ld	a,(hl)
+	dec	hl
+	or	a
+	jp	z,switch_search_loop
+	cp	' '
+	jp	z,switch_search_loop
+	cp	'/'
+	jp	z,switch_search_loop
+	jp	disp_help
+
+;====== check ESE-RAM & set segment registers
+
+start_initialize:
+	call	enable_target_slot
+
+	ld	a,(sw_initialize_type)
+	or	a
+	jr	z,init_type_0000
+	dec	a
+	jr	z,init_type_0101
+
+;init_type_0123:
+	xor	a
+	ld	(bank0_select),a
+	inc	a
+	ld	(bank1_select),a
+	inc	a
+	ld	(bank2_select),a
+	inc	a
+	ld	(bank3_select),a
+	jr	start_reboot
+
+init_type_0000:
+	xor	a
+	ld	(bank0_select),a
+	ld	(bank1_select),a
+	ld	(bank2_select),a
+	ld	(bank3_select),a
+	jr	start_reboot
+
+init_type_0101:
+	xor	a
+	ld	(bank0_select),a
+	ld	(bank2_select),a
+	inc	a
+	ld	(bank1_select),a
+	ld	(bank3_select),a
+;	jr	start_reboot
+
+start_reboot:
+	call	enable_ram_slot
+
+	ld	iy,(EXPTBL-1)
+	ld	ix,0
+	jp	CALSLT
+
+;======
+
+disp_help:
+	ld	de,mes_help
+exit_command:
+	ld	c,9
+	call	BDOS
+	ld	de,mes_crlf
+	ld	c,9
+	call	BDOS
+	rst	0
+
+enable_target_slot:
+	push	af
+	push	bc
+	push	de
+	push	hl
+	ld	a,(target_slot_number)
+	ld	h,high page1_adr
+	call	ENASLT
+	pop	hl
+	pop	de
+	pop	bc
+	pop	af
+	ret
+
+enable_ram_slot:
+	push	af
+	push	bc
+	push	de
+	push	hl
+	ld	a,(RAMAD1)
+	ld	h,high page1_adr
+	call	ENASLT
+	pop	hl
+	pop	de
+	pop	bc
+	pop	af
+	ret
+
+target_slot_number:
+	dw	0
+
+initialize_type:
+	db	0
+
+mes_help:
+	db	13,10
+	db	'Usage: ESE2BOOT /Sxx /Tx',13,10
+	db	' /Sxx : Target slot',13,10,
+	db	'   xx: hex value (0-3,80-8F)',13,10
+	db	'   #x-x: dec value (x=0-3)',13,10
+	db	' /Tn : Initialize type(0-2)',13,10
+	db	'    0: 0-0-0-0 (default)',13,10
+	db	'    1: 0-1-0-1',13,10
+	db	'    2: 0-1-2-3','$'
+mes_err_notarget:
+	db	13,10,'No target slot !$'
+
+	end
