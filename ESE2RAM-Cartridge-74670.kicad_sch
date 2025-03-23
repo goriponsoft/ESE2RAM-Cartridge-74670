@@ -6,8 +6,8 @@
 
   (title_block
     (title "ESE2RAM Cartridge (74x670 version)")
-    (date "2024-06-08")
-    (rev "4")
+    (date "2025-03-17")
+    (rev "5")
     (company "Goripon Hardware")
   )
 
@@ -1197,13 +1197,13 @@
       )
     )
     (symbol "ProjectLibrary:BUS_MSX" (in_bom no) (on_board yes)
-      (property "Reference" "J" (at 0 42.545 0)
+      (property "Reference" "J1" (at 0 45.72 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "BUS_MSX" (at 0 -27.94 0)
+      (property "Value" "BUS_MSX" (at 0 43.18 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Footprint" "" (at 0 0 0)
+      (property "Footprint" "ProjectLibrary:BUS_MSX_CARD_SHORT" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "Datasheet" "" (at 0 0 0)
