@@ -43,9 +43,9 @@ I named this cartridge "ESE-ESE-RAM" or "ESE2-RAM". "ESE2-RAM" originates from "
 |RN1|Resistor array 8 elements, 10K ohm, SIP-9|1|
 |S1|6x6mm Through hole & ground terminal type tactile switch "TVDP01-095BB1"|1|
 |U1-U2|General purpose logic IC "74HC670"|2|
-|U3|General purpose logic IC "74HC138"|1|
-|U4|General purpose logic IC "74HC00"|1|
-|U5|General purpose logic IC "74HC32"|1|
+|U3|General purpose logic IC "74AHC138"|1|
+|U4|General purpose logic IC "74AHC00"|1|
+|U5|General purpose logic IC "74AHC32"|1|
 |-|CR2032 battery|1|
 
 ## How to assemble
