@@ -599,7 +599,7 @@
     "net_colors": null,
     "netclass_assignments": {
       "+5V": "Power",
-      "-BATT": "Power",
+      "/BATT-": "Power",
       "Net-(BT1-+)": "Power",
       "Net-(D2-K)": "Power"
     },

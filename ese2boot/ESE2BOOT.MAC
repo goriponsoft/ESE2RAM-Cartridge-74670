@@ -24,7 +24,7 @@ EXPTBL	equ	0FCC1h
 ;====== output version string
 
 mes_version:
-	db	'ESE22RAM BOOTer 1.00',13,10
+	db	'ESE2RAM BOOTer 1.01',13,10
 	db	'Copyright 2025 GORIPONSOFT',26
 mes_crlf:
 	db	13,10,'$'
@@ -49,6 +49,7 @@ START::
 	xor	a
 	ld	(de),a
 	ld	(initialize_type),a
+	ld	(verbose_mode),a
 	dec	a
 	ld	(target_slot_number),a
 switch_search_loop:
@@ -63,9 +64,11 @@ switch_search_loop:
 	ld	a,(hl)
 	and	0dfh
 	cp	'S'
-	jp	z,sw_target_slot
+	jr	z,sw_target_slot
 	cp	'T'
-	jp	z,sw_initialize_type
+	jr	z,sw_initialize_type
+	cp	'V'
+	jr	z,sw_verbose_mode
 	jp	disp_help
 
 switch_search_end:
@@ -79,7 +82,7 @@ sw_initialize_type:
 	inc	hl
 	ld	a,(hl)
 	or	a
-	jp	z,switch_search_end
+	jp	z,disp_help
 	sub	'0'
 	jp	c,disp_help
 	cp	3
@@ -89,12 +92,17 @@ sw_initialize_type:
 	ld	a,(hl)
 	dec	hl
 	or	a
-	jp	z,switch_search_end
+	jr	z,switch_search_end
 	cp	' '
-	jp	z,switch_search_loop
+	jr	z,switch_search_loop
 	cp	'/'
-	jp	z,switch_search_loop
+	jr	z,switch_search_loop
 	jp	disp_help
+
+sw_verbose_mode:
+	ld	a,-1
+	ld	(verbose_mode),a
+	jr	switch_search_loop
 
 sw_target_slot:
 	inc	hl
@@ -143,17 +151,18 @@ hex_slot_number:
 	jp	nz,disp_help
 	inc	hl
 	ld	a,(hl)
-	and	0dfh
-	sub	'0'
+	cp	'0'
 	jp	c,disp_help
-	cp	10
+	cp	'0'+10
 	jr	nc,non_numeric_hex_value
+	sub	'0'
 	or	80h
 	ld	e,a
 	jr	confirm_slot_number
 
 non_numeric_hex_value:
-	sub	'A'-'0'-10
+	and	0dfh
+	sub	'A'-10
 	jp	c,disp_help
 	cp	16
 	jp	nc,disp_help
@@ -174,9 +183,61 @@ confirm_slot_number:
 	jp	z,switch_search_loop
 	jp	disp_help
 
-;====== check ESE-RAM & set segment registers
-
 start_initialize:
+
+;====== Display settings
+
+	ld	a,(verbose_mode)
+	or	a
+	jr	z,not_verbose
+
+	ld	de,mes_target_slot
+	ld	c,9
+	call	BDOS
+	ld	a,(target_slot_number)
+	and	00000011b
+	add	a,'0'
+	ld	e,a
+	ld	c,2
+	call	BDOS
+	ld	a,(target_slot_number)
+	rla
+	jr	nc,skip_put_secondary
+	ld	e,'-'
+	ld	c,2
+	call	BDOS
+	ld	a,(target_slot_number)
+	rrca
+	rrca
+	and	00000011b
+	add	a,'0'
+	ld	e,a
+	ld	c,2
+	call	BDOS
+skip_put_secondary:
+
+	ld	de,mes_initialize_type
+	ld	c,9
+	call	BDOS
+	ld	de,mes_tbl_type
+	ld	hl,(initialize_type)
+	add	hl,hl
+	add	hl,hl
+	add	hl,hl
+	add	hl,de
+	ex	de,hl
+	ld	c,9
+	call	BDOS
+	ld	de,mes_keywait
+	ld	c,9
+	call	BDOS
+	ld	c,1
+	call	BDOS
+
+not_verbose:
+
+;====== Set segment registers
+
 	call	enable_target_slot
 
 	ld	a,(sw_initialize_type)
@@ -194,7 +255,7 @@ start_initialize:
 	ld	(bank2_select),a
 	inc	a
 	ld	(bank3_select),a
-	jr	start_reboot
+	jr	reboot
 
 init_type_0000:
 	xor	a
@@ -202,7 +263,7 @@ init_type_0000:
 	ld	(bank1_select),a
 	ld	(bank2_select),a
 	ld	(bank3_select),a
-	jr	start_reboot
+	jr	reboot
 
 init_type_0101:
 	xor	a
@@ -211,9 +272,9 @@ init_type_0101:
 	inc	a
 	ld	(bank1_select),a
 	ld	(bank3_select),a
-;	jr	start_reboot
+;	jr	reboot
 
-start_reboot:
+reboot:
 	call	enable_ram_slot
 
 	ld	iy,(EXPTBL-1)
@@ -262,10 +323,21 @@ enable_ram_slot:
 
 target_slot_number:
 	dw	0
-
 initialize_type:
+	dw	0
+verbose_mode:
 	db	0
 
+mes_target_slot:
+	db	13,10,'Target Slot: #','$'
+mes_initialize_type:
+	db	13,10,'Initialize Type: ','$'
+mes_tbl_type:
+	db	'0-0-0-0','$'
+	db	'0-1-0-1','$'
+	db	'0-1-2-3','$'
+mes_keywait:
+	db	13,10,13,10,'Press any key for reboot...','$'
 mes_help:
 	db	13,10
 	db	'Usage: ESE2BOOT /Sxx /Tx',13,10
@@ -275,7 +347,8 @@ mes_help:
 	db	' /Tn : Initialize type(0-2)',13,10
 	db	'    0: 0-0-0-0 (default)',13,10
 	db	'    1: 0-1-0-1',13,10
-	db	'    2: 0-1-2-3','$'
+	db	'    2: 0-1-2-3',13,10
+	db	' /V : Verbose mode','$'
 mes_err_notarget:
 	db	13,10,'No target slot !$'
 
