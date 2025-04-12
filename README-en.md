@@ -32,6 +32,7 @@ In recent years, it has become difficult to obtain MSX games, and there was a lo
 I named this cartridge "ESE-ESE-RAM" or "ESE2-RAM". "ESE2-RAM" originates from "ESE squared".
 
 ## Components
+Note: After board Rev.6, U3 to U5 have been changed from 74HC series to 74AHC series.
 |Part Number|Parts|Quantity|
 |:--|:--|--:|
 |BT1|CR2032 battery holder, Either "CH29-2032LF"/"CH28-2032LF(TR)"/"CH004-2032LF"/"CH004-2032LF"|1|
