@@ -106,3 +106,25 @@ Normally, you can initialize the device without any problems by placing the foll
 	ld		(7000h),a
 	ld		(7800h),a
 ```
+## Compatibility information
+About hardware that has been confirmed to work (in no particular order).
+
+We will add the hardware that you have reported in order.
+
+### Models that have been confirmed to be malfunctioning and their symptoms
+
+- JVC HC-90 and HC-95 (MSX2): Data read from RAM becomes corrupted and does not work properly.
+- Toshiba HX-E601 (expansion slot): Not recognized and will not start.
+
+### Models that have been confirmed to work properly
+
+- Panasonic FS-A1ST
+- Sony HB-F1XV
+- Mitsubishi ML-G30model1 and ML-G30model2
+- Yamaha YIS503 and CX5F
+- Yamaha YIS604/128 and CX7M/128
+- Sanyo WAVY70FD and WAVY70FD2
+- Toshiba HX-31
+- Mitsubishi ML-8000
+- General PCT-50 and PCT-55
+- Sony HB-F500
